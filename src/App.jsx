@@ -253,7 +253,7 @@ function Media() {
               เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
             </video>
           </div>
-          <div className="card reveal">
+          <div className="card media-card reveal">
             <h3>รู้จัก GoldRice ผ่านวิดีโอ</h3>
             <p>
               ชมเรื่องราวแบรนด์ พันธกิจด้านสุขภาพและความยั่งยืน ตลอดจนการทำงานร่วมกับชุมชนเกษตรกรไทย
@@ -261,6 +261,30 @@ function Media() {
             <p>
               วิดีโอนี้แสดงให้เห็นกระบวนการที่ใส่ใจตั้งแต่ต้นน้ำถึงปลายน้ำ เพื่อให้ทุกมื้อของคุณมั่นใจได้จริง
             </p>
+            <div className="chips">
+              <span className="chip">พันธกิจ</span>
+              <span className="chip">กระบวนการออร์แกนิค</span>
+              <span className="chip">ชุมชน & ความยั่งยืน</span>
+            </div>
+            <ul className="media-meta">
+              <li>ข้าวออร์แกนิค 100% ตรวจสอบย้อนกลับได้</li>
+              <li>ลดตัวกลาง เพื่อราคาที่เป็นธรรมแก่เกษตรกร</li>
+              <li>คัดคุณภาพทุกล็อต พร้อมแนวทางหุงให้อร่อย</li>
+            </ul>
+            <div className="mini-gallery">
+              <figure>
+                <img src="picture/middleman.jpg" alt="โครงสร้างห่วงโซ่อุปทาน/ตัวกลาง" loading="lazy" />
+                <figcaption>ห่วงโซ่คุณค่าและตัวกลาง</figcaption>
+              </figure>
+              <figure>
+                <img src="picture/Structure_pricing.jpg" alt="โครงสร้างราคา" loading="lazy" />
+                <figcaption>โครงสร้างราคาโดยสังเขป</figcaption>
+              </figure>
+            </div>
+            <div className="hero-actions">
+              <a className="btn btn-ghost" href="#impact">ดูผลกระทบชุมชน</a>
+              <a className="btn btn-primary" href="#products">ดูสินค้าแนะนำ</a>
+            </div>
           </div>
         </div>
       </div>
