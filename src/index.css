@@ -34,10 +34,12 @@ body {
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
 .nav-left { display:flex; align-items:center; gap:12px; }
-.brand { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: .2px; }
+.brand { display: grid; grid-template-columns: 1fr; font-weight: 800; letter-spacing: .2px; }
+.brand-link { display:flex; align-items:center; gap:12px; text-decoration:none; color: var(--ink); width: fit-content; }
+.brand-link:hover .name { color: var(--green); }
 .brand img { width: 44px; height: 44px; border-radius: 10px; object-fit: cover; box-shadow: var(--shadow); }
 .brand .name { font-size: 1.125rem; }
-.brand .tag { color: var(--muted); font-weight: 500; font-size: .925rem; }
+.brand .tag { color: var(--muted); font-weight: 500; font-size: .925rem; margin-left: 56px; margin-top: -4px; display:block; }
 .nav-links { display: flex; gap: 18px; align-items:center; }
 .nav-links a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: .95rem; opacity: .9; }
 .nav-links a:hover { color: var(--green); }

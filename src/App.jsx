@@ -43,13 +43,13 @@ function Navbar() {
     <nav className="nav">
       <div className="container nav-inner">
         <div className="nav-left">
-          <a className="brand" href="#home" aria-label="GoldRice Home" onClick={close}>
-            <img src="picture/Logo GoldRice.jpg" alt="GoldRice Logo" />
-            <div>
-              <div className="name">GoldRice</div>
-              <div className="tag">Organic Rice for Better Living</div>
-            </div>
-          </a>
+          <div className="brand">
+            <a className="brand-link" href="#home" aria-label="GoldRice Home" onClick={close}>
+              <img src="picture/Logo GoldRice.jpg" alt="GoldRice Logo" />
+              <span className="name">GoldRice</span>
+            </a>
+            <span className="tag">Organic Rice for Better Living</span>
+          </div>
           <button className="nav-toggle" aria-controls="mainmenu" aria-expanded={open} onClick={toggle}>เมนู</button>
         </div>
         <div id="mainmenu" className={`nav-links ${open ? 'open' : ''}`}>
