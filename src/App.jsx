@@ -300,13 +300,16 @@ function Products() {
         <p className="lead reveal">มี 2 ชนิด และ 2 ขนาด ราคาเท่ากัน: 1 กก. 250 บาท · 5 กก. 1,250 บาท</p>
         <div className="product-grid">
           <article className="card product-card reveal">
-            <img className="banner" src="picture/jasmin_surin.png" alt="ข้าวมะลินิลสุรินทร์" loading="lazy" />
             <h3>ข้าวมะลินิลสุรินทร์</h3>
             <ul className="benefits">
               <li>อุดมด้วยแอนโทไซยานิน (สารต้านอนุมูลอิสระ) สีม่วงเข้มตามธรรมชาติ</li>
               <li>ไฟเบอร์สูง ช่วยให้อิ่มนาน และระบบขับถ่ายดีขึ้น</li>
               <li>รสสัมผัสหอมนุ่ม เหมาะกับเมนูไทยและสุขภาพ</li>
             </ul>
+            <figure className="nutrition-fig">
+              <img src="picture/jasmin_surin.png" alt="ข้อมูลโภชนาการ ข้าวมะลินิลสุรินทร์" loading="lazy" />
+              <figcaption>โภชนาการ: ข้าวมะลินิลสุรินทร์</figcaption>
+            </figure>
             <div className="prices">
               <span className="price-chip">1 กก. 250 บาท</span>
               <span className="price-chip">5 กก. 1,250 บาท</span>
@@ -314,13 +317,16 @@ function Products() {
           </article>
 
           <article className="card product-card reveal">
-            <img className="banner" src="picture/gaba.png" alt="ข้าวกล้องงอกอินทรีย์ GABA" loading="lazy" />
             <h3>ข้าวกล้องงอกอินทรีย์ GABA</h3>
             <ul className="benefits">
               <li>ผ่านกระบวนการงอก ช่วยเพิ่มกรดอะมิโน GABA ตามธรรมชาติ</li>
               <li>มีแมกนีเซียม วิตามิน และไฟเบอร์ ช่วยสมดุลร่างกาย</li>
               <li>เนื้อสัมผัสนุ่ม เคี้ยวเพลิน เหมาะกับเมนูเพื่อสุขภาพ</li>
             </ul>
+            <figure className="nutrition-fig">
+              <img src="picture/gaba.png" alt="ข้อมูลโภชนาการ ข้าวกล้องงอกอินทรีย์ GABA" loading="lazy" />
+              <figcaption>โภชนาการ: ข้าวกล้องงอกอินทรีย์ GABA</figcaption>
+            </figure>
             <div className="prices">
               <span className="price-chip">1 กก. 250 บาท</span>
               <span className="price-chip">5 กก. 1,250 บาท</span>
