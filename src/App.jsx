@@ -53,6 +53,7 @@ function Navbar() {
           <button className="nav-toggle" aria-controls="mainmenu" aria-expanded={open} onClick={toggle}>เมนู</button>
         </div>
         <div id="mainmenu" className={`nav-links ${open ? 'open' : ''}`}>
+          <a href="https://goldricesurvey.netlify.app/" target="_blank" rel="noopener noreferrer" onClick={close}>แบบสำรวจ 20%</a>
           <a href="#media" onClick={close}>วิดีโอ</a>
           <a href="#about" onClick={close}>เกี่ยวกับเรา</a>
           <a href="#organic" onClick={close}>ออร์แกนิค</a>
@@ -227,11 +228,35 @@ export default function App() {
       <About />
       <Organic />
       <Products />
+      <SurveyCTA />
       <Impact />
       <Contact />
       <FAQ />
       <Footer />
     </>
+  )
+}
+
+function SurveyCTA() {
+  return (
+    <section id="survey" className="section">
+      <div className="container">
+        <div className="cta-wrap survey reveal">
+          <div>
+            <h2>ทำแบบสำรวจ รับคูปองส่วนลด 20%</h2>
+            <p className="lead">สละเวลาไม่เกิน 2–3 นาที เพื่อช่วยให้เราปรับปรุงสินค้าและบริการให้ดีขึ้น แลกกับคูปองส่วนลดสำหรับการสั่งซื้อครั้งถัดไป</p>
+            <div className="hero-actions">
+              <a className="btn btn-primary" href="https://goldricesurvey.netlify.app/" target="_blank" rel="noopener noreferrer">เริ่มทำแบบสำรวจ</a>
+              <a className="btn btn-ghost" href="#products">ดูสินค้า</a>
+            </div>
+          </div>
+          <div className="coupon" aria-label="คูปองส่วนลด 20%">
+            <div className="big">20%</div>
+            <div className="sub">คูปองส่วนลดหลังทำแบบสำรวจ</div>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 
