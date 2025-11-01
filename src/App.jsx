@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 
+const LINE_ADD_FRIEND_URL = 'https://lin.ee/q0PKmBB'
+
 const sections = {
   about: {
     title: 'รู้จัก GoldRice',
@@ -83,7 +85,9 @@ function Hero() {
             แปรรูปอย่างพิถีพิถัน เพื่อทุกมื้อที่มั่นใจได้จริง
           </p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href="#contact">สแกนเพิ่มเพื่อน Line OA</a>
+            <a className="btn btn-primary" href={LINE_ADD_FRIEND_URL} target="_blank" rel="noopener noreferrer">
+              เพิ่มเพื่อน Line OA
+            </a>
             <a className="btn btn-ghost" href="#about">ดูข้อมูลแบรนด์</a>
           </div>
         </div>
@@ -192,12 +196,14 @@ function Contact() {
               เพิ่มเพื่อน Line Official Account เพื่อรับข่าวสาร โครงการเพื่อชุมชน และเรื่องราวจากทุ่งนาถึงโต๊ะอาหาร
             </p>
             <div className="hero-actions">
-              <a className="btn btn-primary" href="#contact">สแกน QR ที่นี่</a>
+              <a className="btn btn-primary" href={LINE_ADD_FRIEND_URL} target="_blank" rel="noopener noreferrer">
+                กดเพื่อเพิ่มเพื่อน Line OA
+              </a>
               <a className="btn btn-ghost" href="#about">รู้จักเราเพิ่มเติม</a>
             </div>
           </div>
           <div className="qr" aria-label="QR Code Line OA">
-              <img src="picture/Qr_code_add_LineOa.png" alt="QR Code Line OA" />
+            <img src="picture/Qr_code_add_LineOa.png" alt="QR Code Line OA" />
           </div>
         </div>
       </div>
